@@ -26,6 +26,45 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+.container {
+  margin-top: 50px; /* ajoute une marge en haut pour espacer du haut de la page */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* centre les images horizontalement */
+  align-items: center;
+}
+
+.image-container a {
+  margin: 0 50px; /* ajoute un espace de 50 pixels entre les images */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container a:hover img {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  /* ajoute une règle CSS pour adapter la mise en page sur les petits écrans */
+  .image-container {
+    flex-wrap: wrap;
+  }
+
+  .image-container a {
+    margin: 20px 0;
+    flex-basis: 100%;
+  }
+}
+
+
+  </style>
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -266,12 +305,15 @@
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">Experience</h3>
             <div class="resume-item pb-0">
-              <h4>Stage d’initiation 1ere année</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <h4>Stage d’initiation 1 ère année</h4>
+              <p><a href="https://maisonsoftware.com/"> <em>La Maison du Software - LMS</em></a></p>
+              <h5>Aout 2022</h5><i class="bi bi-geo-alt"></i>&ensp; Casablanca
+              <p> <b>projet :</b> Conception et réalisation d’une application web pour la gestion de demande de stage.</p>
               <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li><b>Conception</b> | Merise</li>
+                <li><b>Frontend</b> | Html, Bootstrap, Css, Javascript</li>
+                <li><b>Backend</b> | Laravel 8 , PHP</li>
+                <li><b>Base de données </b>|phpMyAdmin  </li>
               </ul>
             </div>
 
@@ -325,7 +367,22 @@
             </div>
           </div>
         </div>
-
+        <br><br><br><br>
+        <div class="row">
+          <div>
+            <h3 class="resume-title">Certification</h3>
+            
+            <div class="container">
+              <div class="image-container">
+                <a href="https://www.credly.com/badges/d2a4c8eb-55ae-42d6-bc49-471f33d434a7">
+                  <img src="image.png" class="img-fluid image1" alt="" style="width: 1000px; height: 600x;">
+                </a>
+                <a href="https://www.credly.com/badges/b6ab8f29-3bf3-4247-8e3d-7220c75a6637">
+                  <img src="image1.png" class="img-fluid image2" alt="" style="width: 1000px; height: 600x;">
+                </a>
+              </div>
+            </div>
+        </div>
       </div>
     </section><!-- End Resume Section -->
 
@@ -611,7 +668,7 @@
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
@@ -638,7 +695,7 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div>
+          </div> -->
 
         </div>
 
@@ -665,7 +722,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  const images = document.querySelectorAll('.image-container img');
 
+  images.forEach((image) => {
+    image.addEventListener('mouseover', () => {
+      image.classList.add('hover');
+    });
+  
+    image.addEventListener('mouseout', () => {
+      image.classList.remove('hover');
+    });
+  });
+</script>
 </body>
 
 </html>
