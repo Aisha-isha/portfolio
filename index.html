@@ -27,6 +27,49 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
+
+
+/* Style pour la cadre blanc */
+.icon-box-overlay {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+/* Animation de l'apparition du cadre blanc */
+.icon-box:hover .icon-box-overlay {
+  width: 100%;
+  height: 100%;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+}
+
+/* Style pour le contenu de la classe .icon-box */
+.icon-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajouter une ombre sur l'effet 3D */
+.icon-box:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
 .container {
   margin-top: 50px; /* ajoute une marge en haut pour espacer du haut de la page */
 }
@@ -637,14 +680,44 @@
 
       </div>
     </section><!-- End Testimonials Section -->
+    <br><br><br><br><br><br><br><br><br><br>
 
-    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          
+          <h2>Contactez moi</h2>
+          <br><br><br><br><br><br>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-phone"></i></div>
+            <h4 class="title"><a href="">Téléphone</a></h4>
+            <p class="description">+212 634-292360</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <h4 class="title"><a href="">Email</a></h4>
+            <p class="description">aichaelhajoui1171@gmail.com<br>aicha_elhajoui@um5.ac.ma</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+            <h4 class="title"><a href="">adresse</a></h4>
+            <p class="description">Casablanca, Maroc</p>
+          </div>
+        </div>
+      </section>
+
+      <br><br><br><br><br><br><br><br>
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contactez - moi</h2>
+
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -670,9 +743,9 @@
               </div>
 
               <iframe src="https://www.google.com/maps/place/Casablanca/@33.5722602,-7.6693941,12z/data=!3m1!4b1!4m6!3m5!1s0xda7cd4778aa113b:0xb06c1d84f310fd3!8m2!3d33.5731104!4d-7.5898434!16zL20vMDIyYl8" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
+            </div> -->
 
-          </div>
+          
 
           <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -703,10 +776,11 @@
             </form>
           </div> -->
 
-        </div>
+        <!-- </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
