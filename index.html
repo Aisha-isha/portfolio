@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Aicha EL HAJOUI portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+
+.icon-box-overlay {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.icon-box:hover .icon-box-overlay {
+  width: 100%;
+  height: 100%;
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+}
+
+.icon-box > * {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-box:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+.container {
+  margin-top: 50px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container a {
+  margin: 0 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container a:hover img {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+
+  .image-container {
+    flex-wrap: wrap;
+  }
+
+  .image-container a {
+    margin: 20px 0;
+    flex-basis: 100%;
+  }
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <br><br><br><br><br>
+        <h1 class="text-light"><a href="index.html">Aicha EL HAJOUI</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/Aisha-isha" class="twitter"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/aicha-el-hajoui-99a151225/" class="linkedin"><i class="bx bxl-linkedin"></i></a><br>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar" style="margin-left: 32%;">
+        <ul>
+          <br><br>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home" style="font-size: 2.5em;"></i> <span></span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user" style="font-size: 2.5em;"></i> <span></span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank" style="font-size: 2.5em;"></i> <span></span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope" style="font-size: 2.5em;"></i> <span></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Aicha EL HAJOUI </h1><br><br>
+      <p><span class="typed" data-typed-items="Software Engineer"></span></p>
+    </div>
+  </section>
+
+  <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Aicha</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="aicha.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            
+            
+            <p>
+              <br><br><br><br><br><br><br><br>
+              I am a recent software engineering graduate with a passion for practical problem-solving and effective communication. Known for my adaptability and teamwork, I thrive in collaborative environments and bring high energy and determination to achieve my goals. Outside of work, I enjoy staying active through running and exploring my creative side with graphic design, particularly using Photoshop. This blend of technical skills and personal interests fuels my ability to think creatively and stay focused under pressure.
+            </p>
+            <a href="aicha-resume.pdf"
+   download="aicha-resume.pdf">My resume</a>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+    
+    <hr>
+
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg" data-aos="fade-up">
+            <h3 class="resume-title">PROFESSIONAL EXPERIENCE</h3>
+            <div class="resume-item pb-0">
+              <h4>End-of-Studies Internship</h4>
+              <p><a href="https://www.cnss.ma/"> <em>Orun AI</em></a></p>
+              <h5>February 2024 - Auguest 2024</h5><i class="bi bi-geo-alt"></i>&ensp; Ontario, Canada
+              <p> <b>project : </b>Design and development of an off-chain platform enabling financial institutions to govern smart contracts on the blockchain.</p>
+              <p>
+                <b> Tasks</b>
+                <ul>
+                  <li> User interface development using React.js</li>
+                  <li>  JWT authentication implemented with Java</li>
+                  <li>  Developed a project creation and smart contract storage service using, Spring Boot, Azure Cosmos DB, and Azure Blob Storage</li>
+                  <li>  Built a service for injecting rules into a smart contract using ANTLR</li>
+                  <li>  Deployment, interaction, and event listening of a smart contract on the blockchain using web3.js</li>
+                </ul>
+              </p>
+              <p>
+                <b>Tools</b>
+                <ul>
+                  <li><b>Frontend Technologies</b> | React</li>
+                  <li><b>Backend Frameworks</b> | Spring Boot</li>
+                  <li><b>Blockchain Technologies</b> | Web3.js, Solidity</li>
+                  <li><b>Tools</b> | ANTLR, Docker, Jira</li>
+                  <li><b>Cloud Platforms</b> | Microsoft Azure</li>
+                  <li><b>Architecture</b> | Microservices, Kubernetes</li>
+                  <li><b>Databases</b> | Cosmos DB, Azure Blob Storage</li>
+                  <li><b>Programming Languages</b> | Java</li>
+                </ul>
+              </p>
+            </div>
+
+
+
+            <div class="resume-item pb-0">
+              <h4>2nd Year Internship</h4>
+              <p><a href="https://www.cnss.ma/"> <em>CNSS</em></a></p>
+              <h5>July 2023 - Auguest 2023</h5><i class="bi bi-geo-alt"></i>&ensp; Casablanca, Morocco
+              <p> <b>project : </b>Designed and developped a high-performance program to load large data files into a customized Oracle database, including data formatting, optimization of time and memory through batching and parallel processing.
+              </p>
+              <ul>
+                <li><b>Programming Languages</b> | Java</li>
+                <li><b>Frameworks</b> | Spring Boot</li>
+                <li><b>Web Technologies</b> | HTML, CSS, JavaScript</li>
+                <li><b>Databases</b> | Oracle Database</li>
+                <li><b>Modeling</b> | UML</li>
+                <li><b>Version Control</b> | Git, GitHub</li>
+                <li><b>Tools</b> | Docker, Apache Commons, Apache POI, JUnit</li>
+              </ul>
+            </div>
+            <div class="resume-item pb-0">
+              <h4>1st Year Internship</h4>
+              <p><a href="https://maisonsoftware.com/"> <em>LMS</em></a></p>
+              <h5>Auguest 2022</h5><i class="bi bi-geo-alt"></i>&ensp; Casablanca, Morocco
+              <p> <b>project : </b> • Designed and developed a web application for managing internship requests: The application allowed the company to post internship offers, manage applications, and notify candidates of the progress of their applications.</p>
+              <ul>
+                <li><b>Design</b> | Merise</li>
+                <li><b>Frontend</b> | HTML, Bootstrap, CSS, JavaScript</li>
+                <li><b>Backend</b> | Laravel 8, PHP</li>
+                <li><b>Databases</b> | MySQL</li>
+              </ul>            
+            </div>
+            <h3 class="resume-title">ACADEMIC BACKGROUND</h3>
+            <div class="resume-item">
+                <h4><span>Engineering Degree in Software Engineering</span></h4>
+                <p><em>National School of Computer Science and Systems Analysis (ENSIAS)</em></p>
+                <h5>2021 - 2024</h5><i class="bi bi-geo-alt"></i>&ensp; Rabat
+            </div>
+            <div class="resume-item">
+                <h4>Classes préparatoires aux grandes écoles - Technology and Industrial Sciences - TSI</h4>
+                <p><em>Lycée technique Mohammedia (LTM)</em></p>
+                <h5>2019 - 2021</h5>&ensp;<i class="bi bi-geo-alt"></i>&ensp; Mohammedia
+            </div>
+            <div class="resume-item">
+                <h4>Baccalaureate in Mechanical Science and Technology - STM</h4>
+                <p><em>IBNOU MANDOUR High School</em></p>
+                <h5>2019</h5>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="bi bi-geo-alt"></i>&ensp; Casablanca
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+          <div>
+            <h3 class="resume-title">Certification</h3>
+            
+            <div class="container">
+              <div class="image-container">
+                <a href="https://www.credly.com/badges/06cbf857-0ce0-460e-a1f0-297aadcc2c17/public_url">
+                  <img src="image.png" class="img-fluid image1" alt="" style="width: 400px; height: 400px;">
+                </a>
+                <a href="https://www.credly.com/badges/b6ab8f29-3bf3-4247-8e3d-7220c75a6637">
+                  <img src="image1.png" class="img-fluid image2" alt="" style="width: 400px; height: 400px;">
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><hr>
+    
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <br><br><br>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-phone"></i></div>
+            <h4 class="title"><a href="">phone</a></h4>
+            <p class="description">+212 634-292360</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <h4 class="title"><a href="">Email</a></h4>
+            <p class="description">elhajouiaicha11@gmail.com<br>aicha_elhajoui@um5.ac.ma</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+            <h4 class="title"><a href="">address</a></h4>
+            <p class="description">Casablanca, Morocco</p>
+          </div>
+          
+        </div>
+        <br><br><br><br><br><br>
+        <div class="social-links mt-3 text-center" >
+          <a href="https://github.com/Aisha-isha" class="twitter"style="font-size: 2.5em;"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/aicha-el-hajoui-99a151225/" class="linkedin" style="font-size: 2.5em;margin-left:3%;"><i class="bx bxl-linkedin"></i></a><br>
+        </div>
+      </section>
+  </main>
+ 
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  const images = document.querySelectorAll('.image-container img');
+
+  images.forEach((image) => {
+    image.addEventListener('mouseover', () => {
+      image.classList.add('hover');
+    });
+  
+    image.addEventListener('mouseout', () => {
+      image.classList.remove('hover');
+    });
+  });
+</script>
+</body>
+
+</html>
